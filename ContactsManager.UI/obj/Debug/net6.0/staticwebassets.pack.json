@@ -1,0 +1,205 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\StyleSheet.css"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\error.svg",
+      "PackagePath": "staticwebassets\\error.svg"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\favicon.42656662.png",
+      "PackagePath": "staticwebassets\\favicon.42656662.png"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\favicon.6c638f7d.png",
+      "PackagePath": "staticwebassets\\favicon.6c638f7d.png"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\favicon.8b2f57bf.png",
+      "PackagePath": "staticwebassets\\favicon.8b2f57bf.png"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\icons.15690fc8.svg",
+      "PackagePath": "staticwebassets\\icons.15690fc8.svg"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\icons.21bad73c.svg",
+      "PackagePath": "staticwebassets\\icons.21bad73c.svg"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\icons.43fe6289.svg",
+      "PackagePath": "staticwebassets\\icons.43fe6289.svg"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\icons.c14567a0.svg",
+      "PackagePath": "staticwebassets\\icons.c14567a0.svg"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\icons.dfd7a6db.svg",
+      "PackagePath": "staticwebassets\\icons.dfd7a6db.svg"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.23d81587.js",
+      "PackagePath": "staticwebassets\\index.23d81587.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.23d81587.js.map",
+      "PackagePath": "staticwebassets\\index.23d81587.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.34389f0e.js",
+      "PackagePath": "staticwebassets\\index.34389f0e.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.34389f0e.js.map",
+      "PackagePath": "staticwebassets\\index.34389f0e.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.3fdca3a9.css",
+      "PackagePath": "staticwebassets\\index.3fdca3a9.css"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.3fdca3a9.css.map",
+      "PackagePath": "staticwebassets\\index.3fdca3a9.css.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.5531377c.js",
+      "PackagePath": "staticwebassets\\index.5531377c.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.5531377c.js.map",
+      "PackagePath": "staticwebassets\\index.5531377c.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.b5fc469d.js",
+      "PackagePath": "staticwebassets\\index.b5fc469d.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.b5fc469d.js.map",
+      "PackagePath": "staticwebassets\\index.b5fc469d.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.d0542c3b.css",
+      "PackagePath": "staticwebassets\\index.d0542c3b.css"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.d0542c3b.css.map",
+      "PackagePath": "staticwebassets\\index.d0542c3b.css.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.e37f48ea.js",
+      "PackagePath": "staticwebassets\\index.e37f48ea.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.e37f48ea.js.map",
+      "PackagePath": "staticwebassets\\index.e37f48ea.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.f7626f62.css",
+      "PackagePath": "staticwebassets\\index.f7626f62.css"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.f7626f62.css.map",
+      "PackagePath": "staticwebassets\\index.f7626f62.css.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.fe84ae4a.js",
+      "PackagePath": "staticwebassets\\index.fe84ae4a.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.fe84ae4a.js.map",
+      "PackagePath": "staticwebassets\\index.fe84ae4a.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.runtime.58c6c9f2.js",
+      "PackagePath": "staticwebassets\\index.runtime.58c6c9f2.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.runtime.58c6c9f2.js.map",
+      "PackagePath": "staticwebassets\\index.runtime.58c6c9f2.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.runtime.8379a7f6.js",
+      "PackagePath": "staticwebassets\\index.runtime.8379a7f6.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.runtime.8379a7f6.js.map",
+      "PackagePath": "staticwebassets\\index.runtime.8379a7f6.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.runtime.911b7648.js",
+      "PackagePath": "staticwebassets\\index.runtime.911b7648.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.runtime.911b7648.js.map",
+      "PackagePath": "staticwebassets\\index.runtime.911b7648.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.runtime.feda3a29.js",
+      "PackagePath": "staticwebassets\\index.runtime.feda3a29.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\index.runtime.feda3a29.js.map",
+      "PackagePath": "staticwebassets\\index.runtime.feda3a29.js.map"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\jquery.min.js",
+      "PackagePath": "staticwebassets\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\logo.45fd3b38.png",
+      "PackagePath": "staticwebassets\\logo.45fd3b38.png"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\logo.726d37a8.png",
+      "PackagePath": "staticwebassets\\logo.726d37a8.png"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\logo.833dfef5.png",
+      "PackagePath": "staticwebassets\\logo.833dfef5.png"
+    },
+    {
+      "Id": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ContactsManager.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ContactsManager.UI.props",
+      "PackagePath": "build\\ContactsManager.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ContactsManager.UI.props",
+      "PackagePath": "buildMultiTargeting\\ContactsManager.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ContactsManager.UI.props",
+      "PackagePath": "buildTransitive\\ContactsManager.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

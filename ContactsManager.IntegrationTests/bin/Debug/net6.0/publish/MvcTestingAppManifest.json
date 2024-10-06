@@ -1,0 +1,5 @@
+{
+  "ContactsManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "ContactsManager.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~",
+  "ContactsManager.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "~"
+}

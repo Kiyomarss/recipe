@@ -1,0 +1,153 @@
+2024-10-04 21:53:10.352 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-10-04 21:53:10.407 +03:30 [INF] Hosting environment: Development
+2024-10-04 21:53:10.409 +03:30 [INF] Content root path: D:\practice\0004\19. XSRF\ContactsManager.UI\
+2024-10-04 21:53:59.484 +03:30 [INF] Application is shutting down...
+2024-10-04 21:56:55.134 +03:30 [INF] User profile is available. Using 'C:\Users\pasyar\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-10-04 21:56:55.311 +03:30 [INF] Now listening on: http://localhost:5153
+2024-10-04 21:56:58.618 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/ - -
+2024-10-04 21:56:58.631 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-10-04 21:56:58.994 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-10-04 21:56:59.045 +03:30 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2024-10-04 21:56:59.077 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:56:59.078 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:56:59.080 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:56:59.082 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-10-04 21:56:59.098 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2024-10-04 21:56:59.108 +03:30 [INF] Index action method of PersonsController
+2024-10-04 21:56:59.118 +03:30 [INF] GetFilteredPersons of PersonsService
+2024-10-04 21:56:59.125 +03:30 [INF] GetAllPersons of PersonsRepository
+2024-10-04 21:57:00.950 +03:30 [INF] Entity Framework Core 6.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2024-10-04 21:57:01.728 +03:30 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-10-04 21:57:01.914 +03:30 [INF] Time for Filtered Persons from Database completed in 2792.1 ms
+2024-10-04 21:57:01.944 +03:30 [INF] GetSortedPersons of PersonsService
+2024-10-04 21:57:01.958 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2844.6953ms.
+2024-10-04 21:57:01.965 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-10-04 21:57:02.027 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:02.030 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:02.031 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:02.040 +03:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-10-04 21:57:02.055 +03:30 [INF] Executing ViewResult, running view Index.
+2024-10-04 21:57:02.497 +03:30 [INF] Executed ViewResult - view Index executed in 440.2399ms.
+2024-10-04 21:57:02.499 +03:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-10-04 21:57:02.510 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 3460.7117ms
+2024-10-04 21:57:02.514 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-10-04 21:57:02.530 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 04 Oct 2024 18:27:02 GMT
+Server: Kestrel
+Last-Modified: 2024-10-04 21:57
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-10-04 21:57:02.563 +03:30 [INF] HTTP GET / responded 200 in 3909.2279 ms
+2024-10-04 21:57:02.633 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/ - - - 200 - text/html;+charset=utf-8 4019.3083ms
+2024-10-04 21:57:20.607 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/ - -
+2024-10-04 21:57:20.608 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2024-10-04 21:57:20.617 +03:30 [INF] CORS policy execution successful.
+2024-10-04 21:57:20.631 +03:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-10-04 21:57:20.636 +03:30 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactsManager.UI).
+2024-10-04 21:57:20.641 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/icons.dfd7a6db.svg?1728066440605 - -
+2024-10-04 21:57:20.641 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:20.643 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /icons.dfd7a6db.svg
+2024-10-04 21:57:20.644 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:20.646 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:20.647 +03:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2024-10-04 21:57:20.649 +03:30 [INF] Executing action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) - Validation state: "Invalid"
+2024-10-04 21:57:20.651 +03:30 [INF] Index action method of PersonsController
+2024-10-04 21:57:20.652 +03:30 [INF] GetFilteredPersons of PersonsService
+2024-10-04 21:57:20.653 +03:30 [INF] GetAllPersons of PersonsRepository
+2024-10-04 21:57:20.660 +03:30 [INF] Entity Framework Core 6.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2024-10-04 21:57:20.679 +03:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2024-10-04 21:57:20.684 +03:30 [INF] Time for Filtered Persons from Database completed in 31.6 ms
+2024-10-04 21:57:20.686 +03:30 [INF] GetSortedPersons of PersonsService
+2024-10-04 21:57:20.688 +03:30 [INF] Executed action method CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 37.1467ms.
+2024-10-04 21:57:20.692 +03:30 [INF] Sending file. Request path: '/icons.dfd7a6db.svg'. Physical path: 'D:\practice\0004\19. XSRF\ContactsManager.UI\wwwroot\icons.dfd7a6db.svg'
+2024-10-04 21:57:20.694 +03:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2024-10-04 21:57:20.696 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/svg+xml
+Date: Fri, 04 Oct 2024 18:27:20 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Fri, 04 Oct 2024 18:25:52 GMT
+Content-Length: 13273
+2024-10-04 21:57:20.697 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:20.698 +03:30 [INF] HTTP GET /icons.dfd7a6db.svg responded 200 in 55.4155 ms
+2024-10-04 21:57:20.699 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:20.702 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/icons.dfd7a6db.svg?1728066440605 - - - 200 13273 image/svg+xml 60.1863ms
+2024-10-04 21:57:20.702 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:20.705 +03:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2024-10-04 21:57:20.708 +03:30 [INF] Executing ViewResult, running view Index.
+2024-10-04 21:57:20.716 +03:30 [INF] Executed ViewResult - view Index executed in 8.0484ms.
+2024-10-04 21:57:20.718 +03:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2024-10-04 21:57:20.720 +03:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI) in 80.0427ms
+2024-10-04 21:57:20.721 +03:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactsManager.UI)'
+2024-10-04 21:57:20.723 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Fri, 04 Oct 2024 18:27:20 GMT
+Server: Kestrel
+Access-Control-Allow-Origin: [Redacted]
+Last-Modified: 2024-10-04 21:57
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2024-10-04 21:57:20.725 +03:30 [INF] HTTP GET / responded 200 in 116.4137 ms
+2024-10-04 21:57:20.727 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/ - - - 200 - text/html;+charset=utf-8 120.4669ms
+2024-10-04 21:57:36.093 +03:30 [INF] Request starting HTTP/1.1 GET http://localhost:5153/Recipes/Index?title=63 - -
+2024-10-04 21:57:36.094 +03:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Recipes/Index
+2024-10-04 21:57:36.133 +03:30 [INF] Executing endpoint 'ContactsManager.UI.Controllers.RecipesController.Index (ContactsManager.UI)'
+2024-10-04 21:57:36.146 +03:30 [INF] Route matched with {action = "Index", controller = "Recipes", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String) on controller ContactsManager.UI.Controllers.RecipesController (ContactsManager.UI).
+2024-10-04 21:57:36.160 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:36.162 +03:30 [INF] Executing action method ContactsManager.UI.Controllers.RecipesController.Index (ContactsManager.UI) - Validation state: "Valid"
+2024-10-04 21:57:36.251 +03:30 [INF] Entity Framework Core 6.0.9 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2024-10-04 21:57:36.516 +03:30 [INF] Executed DbCommand (84ms) [Parameters=[@__title_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[RecipeID], [r].[CookingTime], [r].[ImageUrl], [r].[Servings], [r].[SourceUrl], [r].[Title], [r].[publisher], [i].[IngredientID], [i].[Description], [i].[Quantity], [i].[RecipeId], [i].[Unit]
+FROM [Recipes] AS [r]
+LEFT JOIN [Ingredients] AS [i] ON [r].[RecipeID] = [i].[RecipeId]
+WHERE (@__title_0 LIKE N'') OR (CHARINDEX(@__title_0, [r].[Title]) > 0)
+ORDER BY [r].[RecipeID]
+2024-10-04 21:57:36.525 +03:30 [INF] Executed action method ContactsManager.UI.Controllers.RecipesController.Index (ContactsManager.UI), returned result Microsoft.AspNetCore.Mvc.JsonResult in 361.6484ms.
+2024-10-04 21:57:36.527 +03:30 [INF] Before logic - ResponseHeaderActionFilter
+2024-10-04 21:57:36.539 +03:30 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[ContactsManager.Core.DTO.RecipeResponse, ContactsManager.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-10-04 21:57:36.726 +03:30 [INF] Executed action ContactsManager.UI.Controllers.RecipesController.Index (ContactsManager.UI) in 577.845ms
+2024-10-04 21:57:36.728 +03:30 [INF] Executed endpoint 'ContactsManager.UI.Controllers.RecipesController.Index (ContactsManager.UI)'
+2024-10-04 21:57:36.729 +03:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Fri, 04 Oct 2024 18:27:36 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2024-10-04 21:57:36.730 +03:30 [INF] HTTP GET /Recipes/Index responded 200 in 636.2386 ms
+2024-10-04 21:57:36.733 +03:30 [INF] Request finished HTTP/1.1 GET http://localhost:5153/Recipes/Index?title=63 - - - 200 - application/json;+charset=utf-8 639.8087ms

@@ -1,0 +1,28 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "forkify",
+  "proxy": "http://localhost:5153",
+  "scripts": {
+    "clean": "node clean.js",
+    "parcel:serve": "parcel serve index.html --port 1281",
+    "parcel:build": "parcel build index.html --dist-dir wwwroot",
+    "parcel:watch": "parcel watch index.html --dist-dir wwwroot",
+    "start": "concurrently \"npm run parcel:watch\" \"dotnet watch run\""
+  },
+  "author": "pasyar",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "concurrently": "^9.0.1",
+    "parcel": "^2.12.0",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.38.1",
+    "fractional": "^1.0.0",
+    "http-proxy-middleware": "^3.0.2",
+    "regenerator-runtime": "^0.14.1",
+    "sass": "^1.79.3"
+  }
+}

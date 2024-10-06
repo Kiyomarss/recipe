@@ -1,0 +1,56 @@
+{
+  "status": "success",
+  "data": {
+    "recipe": {
+      "publisher": "Cookie and Kate",
+      "ingredients": [
+        {
+          "quantity": 3,
+          "unit": "",
+          "description": "grapefruits"
+        },
+        {
+          "quantity": 6,
+          "unit": "tbsps",
+          "description": "raw sugar or brown sugar"
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "description": "Sprinkle ground ginger"
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "description": "Sprinkle ground cinnamon"
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "description": "Dash sea salt"
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "description": "Greek yogurt or thick goat's yogurt"
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "description": "Honey for drizzling"
+        },
+        {
+          "quantity": null,
+          "unit": "",
+          "description": "Granola"
+        }
+      ],
+      "source_url": "http://cookieandkate.com/2013/broiled-grapefruit-with-honey-yogurt-and-granola/",
+      "image_url": "http://forkify-api.herokuapp.com/images/broiledgrapefruitrecipe6fd0.jpg",
+      "title": "All Recipes",
+      "servings": 4,
+      "cooking_time": 45,
+      "id": "664c8f193e7aa067e94e8317"
+    }
+  }
+}
