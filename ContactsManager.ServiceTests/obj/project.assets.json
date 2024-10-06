@@ -9586,11 +9586,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\practice\\0004\\19. XSRF\\ContactsManager.ServiceTests\\ContactsManager.ServiceTests.csproj",
+      "projectUniqueName": "D:\\Repository\\Recipe\\ContactsManager.ServiceTests\\ContactsManager.ServiceTests.csproj",
       "projectName": "ContactsManager.ServiceTests",
-      "projectPath": "D:\\practice\\0004\\19. XSRF\\ContactsManager.ServiceTests\\ContactsManager.ServiceTests.csproj",
+      "projectPath": "D:\\Repository\\Recipe\\ContactsManager.ServiceTests\\ContactsManager.ServiceTests.csproj",
       "packagesPath": "C:\\Users\\pasyar\\.nuget\\packages\\",
-      "outputPath": "D:\\practice\\0004\\19. XSRF\\ContactsManager.ServiceTests\\obj\\",
+      "outputPath": "D:\\Repository\\Recipe\\ContactsManager.ServiceTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9612,8 +9612,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\practice\\0004\\19. XSRF\\ContactsManager.Core\\ContactsManager.Core.csproj": {
-              "projectPath": "D:\\practice\\0004\\19. XSRF\\ContactsManager.Core\\ContactsManager.Core.csproj"
+            "D:\\Repository\\Recipe\\ContactsManager.Core\\ContactsManager.Core.csproj": {
+              "projectPath": "D:\\Repository\\Recipe\\ContactsManager.Core\\ContactsManager.Core.csproj"
             }
           }
         }

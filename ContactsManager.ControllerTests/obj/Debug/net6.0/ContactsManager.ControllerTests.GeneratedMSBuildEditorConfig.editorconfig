@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ContactsManager.ControllerTests
-build_property.ProjectDir = D:\practice\0004\19. XSRF\ContactsManager.ControllerTests\
+build_property.ProjectDir = D:\Repository\Recipe\ContactsManager.ControllerTests\

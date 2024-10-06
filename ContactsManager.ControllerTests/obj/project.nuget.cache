@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Pl4XR5KmPHmaINvmMoNThEjzLVvVh3HJQOcJ9+quUdwSwNmQb8r1ryd//wgvd8n2OhIaHxNp5sILuW4U9Ke40A==",
+  "dgSpecHash": "BFWjk3CydsOkpdQ7Ju/FvlPD7Yci92o2OtjuloceZJCP3Z5KqyGTUFYNfRuP10XwFtAbEZPi0BuibhlXXNejkw==",
   "success": true,
-  "projectFilePath": "D:\\practice\\0004\\19. XSRF\\ContactsManager.ControllerTests\\ContactsManager.ControllerTests.csproj",
+  "projectFilePath": "D:\\Repository\\Recipe\\ContactsManager.ControllerTests\\ContactsManager.ControllerTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pasyar\\.nuget\\packages\\autofixture\\4.17.0\\autofixture.4.17.0.nupkg.sha512",
     "C:\\Users\\pasyar\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",

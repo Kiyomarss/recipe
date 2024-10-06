@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1OWQy8WEecEKfEwQeUvW4i6XuXYOqxy2PYpuBXJGFRRh2bjvAoBXAqGrU0O2wu9RfyPq/T3W/Ce8qDKTACWskw==",
+  "dgSpecHash": "PyXx12cSO1gWAQGKtCplE5WmEKcl0ji1BwxHoQR8+3kg0L+OgQdNHsgxrl1DI7q7tQj6zCUaw703EXeMruMq5Q==",
   "success": true,
-  "projectFilePath": "D:\\practice\\0004\\19. XSRF\\ContactsManager.ServiceTests\\ContactsManager.ServiceTests.csproj",
+  "projectFilePath": "D:\\Repository\\Recipe\\ContactsManager.ServiceTests\\ContactsManager.ServiceTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pasyar\\.nuget\\packages\\autofixture\\4.17.0\\autofixture.4.17.0.nupkg.sha512",
     "C:\\Users\\pasyar\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",

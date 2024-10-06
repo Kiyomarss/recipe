@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HCU02Kn0nX8EhEbBQh88WYFyimADhquVkGuKemSChb/283t0R+wO26b+KaEpJqUidfoWxq92KtUH54CN85Gjgw==",
+  "dgSpecHash": "yitF0HkDdZQBUKBYF8v0QFprvi9ooqYIXo3GvUoIoBwuQqWYF+hYxXWuT8YueLVMYRiH3uiE3QS3J/hM2Y9EOw==",
   "success": true,
-  "projectFilePath": "D:\\practice\\0004\\19. XSRF\\ContactsManager.UI\\ContactsManager.UI.csproj",
+  "projectFilePath": "D:\\Repository\\Recipe\\ContactsManager.UI\\ContactsManager.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pasyar\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\pasyar\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

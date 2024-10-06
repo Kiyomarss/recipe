@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XURNepcCkbXueHMX/erwjcJSJGza2BTd6Tl3l5ixdpWmMzvjgp1b9asZezOaXbFF1PuGtFMQplqoOYB2kmgVFA==",
+  "dgSpecHash": "kcND1FUCY/h4+2kkG27/f1RSor6tfQtRJsRtm+l9PXLnqQO9e/krU6zfGgDTAlqMRi9ayYCkOBA2Ly8rA8+rsg==",
   "success": true,
-  "projectFilePath": "D:\\practice\\0004\\19. XSRF\\ContactsManager.Infrastructure\\ContactsManager.Infrastructure.csproj",
+  "projectFilePath": "D:\\Repository\\Recipe\\ContactsManager.Infrastructure\\ContactsManager.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pasyar\\.nuget\\packages\\csvhelper\\28.0.1\\csvhelper.28.0.1.nupkg.sha512",
     "C:\\Users\\pasyar\\.nuget\\packages\\epplus\\6.0.8\\epplus.6.0.8.nupkg.sha512",
