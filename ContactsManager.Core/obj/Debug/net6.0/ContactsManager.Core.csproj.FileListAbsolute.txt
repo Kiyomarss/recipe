@@ -34,3 +34,15 @@ D:\practice\0004\19. XSRF\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.
 D:\practice\0004\19. XSRF\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
 D:\practice\0004\19. XSRF\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
 D:\practice\0004\19. XSRF\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll
+D:\Repository\Recipe\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.deps.json
+D:\Repository\Recipe\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.dll
+D:\Repository\Recipe\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.pdb
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.AssemblyReference.cache
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfoInputs.cache
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfo.cs
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.dll
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
+D:\Repository\Recipe\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll
