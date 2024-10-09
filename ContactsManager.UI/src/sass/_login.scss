@@ -1,99 +1,111 @@
+/* تنظیمات کلی برای مودال */
 .login-window {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100rem;
+  width: 38rem; /* عرض کمی کوچکتر برای زیبایی بیشتر */
   background-color: white;
-  border-radius: 9px;
-
-  padding: 5rem 6rem;
-  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.25);
+  border-radius: 15px; /* گردتر کردن گوشه‌ها */
+  padding: 2.5rem 3rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); /* سایه نرم‌تر و کمرنگ‌تر */
   z-index: 1000;
-  transition: all 0.5s;
-
-  .btn--close-modal {
-    font-family: inherit;
-    color: inherit;
-    position: absolute;
-    top: 0.5rem;
-    right: 1.6rem;
-    font-size: 3.5rem;
-    cursor: pointer;
-    border: none;
-    background: none;
-  }
+  transition: all 0.3s ease;
 }
 
-.overlay {
+/* دکمه بستن مودال */
+.login-btn--close-modal {
+  font-family: inherit;
+  color: #555; /* تغییر رنگ به خاکستری تیره */
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem; /* سایز کوچک‌تر و زیباتر */
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* پس‌زمینه با فیلتر و تاری */
+.login-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4); /* کمی تیره‌تر کردن پس‌زمینه */
+  backdrop-filter: blur(6px); /* افزایش تاری برای زیبایی بیشتر */
   z-index: 100;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.upload {
+/* تنظیم ستون‌ها */
+.login__column {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem 6rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem; /* فاصله مناسب بین فیلدها */
+}
 
-  &__column {
-    display: grid;
-    grid-template-columns: 1fr 2.8fr;
-    align-items: center;
-    gap: 1.5rem;
+/* دکمه ورود */
+.login__btn {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.2rem;
+  background: linear-gradient(to right, #f47c57, #f58a6e); /* اضافه کردن گرادیان به دکمه */
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border-radius: 8px; /* گردتر کردن گوشه‌های دکمه */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1); /* اضافه کردن سایه نرم به دکمه */
+}
 
-    & label {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: inherit;
-    }
+.login__btn:hover {
+  background-color: #e36a45; /* تغییر رنگ دکمه هنگام هاور */
+}
 
-    & input {
-      font-size: 1.5rem;
-      padding: 0.8rem 1rem;
-      border: 1px solid #ddd;
-      border-radius: 0.5rem;
-      transition: all 0.2s;
+/* باکس ورودی رمز عبور */
+.password-container {
+  position: relative;
+  margin-bottom: 1rem; /* ایجاد فاصله پایین فیلد */
+}
 
-      &::placeholder {
-        color: $color-grey-light-3;
-      }
+.password-input {
+  width: 100%;
+  padding: 0.75rem 2.5rem; /* فضای داخلی کافی برای آیکون */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
 
-      &:focus {
-        outline: none;
-        border: 1px solid $color-primary;
-        background-color: $color-grey-light-1;
-      }
-    }
+.password-input:focus {
+  border-color: #f47c57; /* تغییر رنگ فیلد هنگام فوکوس */
+  outline: none;
+}
 
-    & button {
-      grid-column: 1 / span 2;
-      justify-self: center;
-      margin-top: 1rem;
-    }
-  }
+/* آیکون چشم */
+.icon-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px; /* تنظیم اندازه آیکون */
+  height: 20px;
+  fill: #333;
+  transition: fill 0.3s ease;
+}
 
-  &__heading {
-    font-size: 2.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    grid-column: 1/-1;
-  }
+.icon-eye:hover {
+  fill: #f47c57; /* تغییر رنگ آیکون هنگام هاور */
+}
 
-  &__btn {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
+/* پیام خطا */
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }

@@ -163,17 +163,4 @@ export const uploadRecipe = async function (newRecipe) {
   }
 };
 
-export const login = async function (loginDto) {
-  try {
-    const dto = {
-      title: loginDto.username,
-      sourceUrl: loginDto.password,
-    };
 
-    console.log(dto);
-
-    const data = await AJAX(`${Login}`, dto);
-  } catch (err) {
-    throw err;
-  }
-};

@@ -121,18 +121,18 @@ const controlAddRecipe = async function (newRecipe) {
 
 const controlLogin = async function (loginDto) {
   try {
-    // Show loading spinner
-    LoginView.renderSpinner();
+    // Reset error message
+    console.log(loginDto);
 
-    // Upload the new recipe data
-    await model.login(loginDto);
-    
+    // Send login data to server
+    await LoginView._login(loginDto);
+
     // Success message
     LoginView.renderMessage();
-    
+
   } catch (err) {
     console.error('💥', err);
-    LoginView.renderError(err.message);
+    LoginView.renderError('Invalid email or password. Please try again.');
   }
 };
 
@@ -144,6 +144,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  LoginView.addHandlerUpload(controlLogin);
+  LoginView._addHandlerLogin(controlLogin);
 };
 init();
