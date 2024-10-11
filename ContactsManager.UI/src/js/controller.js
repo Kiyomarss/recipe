@@ -7,6 +7,7 @@ import paginationView from './views/paginationView.js';
 import bookmarksView from './views/bookmarksView.js';
 import addRecipeView from './views/addRecipeView.js';
 import LoginView from './views/LoginView.js';
+import RegisterView from './views/registerView.js';
 
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
@@ -121,18 +122,20 @@ const controlAddRecipe = async function (newRecipe) {
 
 const controlLogin = async function (loginDto) {
   try {
-    // Reset error message
-    console.log(loginDto);
-
-    // Send login data to server
     await LoginView._login(loginDto);
-
-    // Success message
     LoginView.renderMessage();
-
   } catch (err) {
     console.error('💥', err);
     LoginView.renderError('Invalid email or password. Please try again.');
+  }
+};
+
+const controlRegister = async function (registerDto) {
+  try {
+    await RegisterView._register(registerDto);
+    RegisterView.renderMessage();
+  } catch (err) {
+    console.error('Registration failed', err);
   }
 };
 
@@ -145,5 +148,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
   LoginView._addHandlerLogin(controlLogin);
+  RegisterView._addHandlerRegister(controlRegister);
 };
 init();

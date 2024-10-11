@@ -87,10 +87,8 @@ namespace ContactsManager.UI.Controllers
 
     return View(registerDTO);
    }
-   
   }
-
-
+  
   [HttpGet]
   [Authorize("NotAuthorized")]
   public IActionResult Login()
@@ -99,33 +97,24 @@ namespace ContactsManager.UI.Controllers
   }
 
   [HttpPost]
-  public async Task<IActionResult> Login2(LoginDTO loginDto)
+  public async Task<IActionResult> Login2([FromBody] LoginDTO loginDto)
   {
    if (!ModelState.IsValid)
    {
-    ViewBag.Errors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage);
-    return View(loginDto);
+    var errors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage);
+    return Json(new { success = false, errors });
    }
 
    var result = await _signInManager.PasswordSignInAsync(loginDto.Email, loginDto.Password, isPersistent: false, lockoutOnFailure: false);
 
    if (result.Succeeded)
    {
-    //Admin
-    ApplicationUser user = await _userManager.FindByEmailAsync(loginDto.Email);
-    if (user != null)
-    {
-     if (await _userManager.IsInRoleAsync(user, UserTypeOptions.Admin.ToString()))
-     {
-      return RedirectToAction("Index", "Home", new { area = "Admin" });
-     }
-    }
-    
-    return RedirectToAction(nameof(PersonsController.Index), "Persons");
+    return Json(new { success = true });
    }
-
-   ModelState.AddModelError("Login", "Inalid email or password");
-   return View(loginDto);
+   
+   ModelState.AddModelError("Login", "Invalid email or password");
+   var modelErrors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage);
+   return Json(new { success = false, errors = modelErrors });
   }
 
 

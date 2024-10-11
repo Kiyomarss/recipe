@@ -342,17 +342,15 @@
       <button class="login-btn--close-modal">&times;</button>
       <form class="login-upload">
         <div class="login__column">
-          <h3 class="login__heading">Login</h3>
           <label>Email</label>
           <input value="" required name="userName" type="email" placeholder="Enter your email" />
 
-          <label>Password</label>
+          <!-- Form Login -->
+          <label for="loginPassword">Password</label>
           <div class="password-container">
-            <input type="password" id="password" name="password" placeholder="Enter your password" />
-            <svg id="togglePassword" class="icon-eye">
-              <use href="src/img/icons.svg#icon-eye"></use>
-            </svg>
+            <input type="password" id="loginPassword" name="password" placeholder="Enter your password" />
           </div>
+
 
         </div>
 
@@ -361,6 +359,13 @@
             <use href="src/img/icons.svg#icon-login"></use>
           </svg>
           <span>Login</span>
+        </button>
+
+        <button type="button" class="btn register-btn">
+          <svg>
+            <use href="src/img/icons.svg#icon-user"></use>
+          </svg>
+          <span>Register</span>
         </button>
       </form>
 
@@ -371,6 +376,53 @@
         <p>Invalid username or password. Please try again.</p>
       </div>
     </div>
-  
+
+    <!-- Register Modal -->
+    <div class="register-overlay hidden"></div>
+    <div class="register-window hidden">
+      <button class="register-btn--close-modal">&times;</button>
+      <form class="register-upload">
+        <div class="register__field">
+          <label for="personName">Name</label>
+          <input id="personName" name="personName" type="text" required placeholder="Enter your name">
+        </div>
+
+        <div class="register__field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="register__field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required placeholder="Enter your phone number">
+        </div>
+
+        <div class="register__field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required placeholder="Enter your password">
+        </div>
+
+        <div class="register__field">
+          <label for="confirmPassword">Confirm Password</label>
+          <input id="confirmPassword" name="confirmPassword" type="password" required placeholder="Confirm your password">
+        </div>
+
+        <div class="register__field">
+          <label for="userType">User Type</label>
+          <select id="userType" name="userType">
+            <option value="User">User</option>
+            <option value="Admin">Admin</option>
+          </select>
+        </div>
+
+        <button class="btn register__btn">
+          <svg>
+            <use href="src/img/icons.svg#icon-login"></use>
+          </svg>
+          <span>Register</span>
+        </button>
+      </form>
+    </div>
+
   </body>
 </html>
