@@ -17,6 +17,12 @@ class RegisterView extends View {
   }
 
   toggleWindow() {
+    const isOpen = !this._window.classList.contains('hidden');
+
+    if (isOpen) {
+      this.resetModal();
+    }
+
     this._overlay.classList.toggle('hidden');
     this._window.classList.toggle('hidden');
   }
@@ -27,31 +33,22 @@ class RegisterView extends View {
   }
 
   async _register(registerDto) {
-    try {
-      const dto = {
-        personName: registerDto.personName,
-        email: registerDto.email,
-        phone: registerDto.phone,
-        password: registerDto.password,
-        confirmPassword: registerDto.confirmPassword,
-        userType: registerDto.userType,
-      };
+    const dto = {
+      personName: registerDto.personName,
+      email: registerDto.email,
+      phone: registerDto.phone,
+      password: registerDto.password,
+      confirmPassword: registerDto.confirmPassword,
+      userType: registerDto.userType,
+    };
 
-      const result = await AJAX(`${Register}`, dto);
+    const result = await AJAX(`${Register}`, dto);
 
-      if (result.success) {
-        this.toggleWindow();
-      }
-      else {
-        const errorContainer = document.querySelector("#error-messages");
-        errorContainer.innerHTML = result.errors.join("<br>");
-        errorContainer.style.display = "block";
-      }
-    } catch (err) {
-      const errorContainer = document.querySelector("#error-messages");
-      errorContainer.innerHTML = err.join("<br>");
-      errorContainer.style.display = "block";
+    if (!result.success) {
+      this._errorMessage = result.errors.join("<br>");
     }
+
+    return result.success;
   }
 
   _addHandlerRegister(handler) {

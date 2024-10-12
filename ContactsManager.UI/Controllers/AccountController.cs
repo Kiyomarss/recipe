@@ -34,7 +34,7 @@ namespace ContactsManager.UI.Controllers
   [HttpPost]
   [Authorize("NotAuthorized")]
   //[ValidateAntiForgeryToken]
-  public async Task<IActionResult> Register(RegisterDTO registerDTO)
+  public async Task<IActionResult> Register([FromBody] RegisterDTO registerDTO)
   {
    //Check for validation errors
    if (ModelState.IsValid == false)
@@ -76,7 +76,7 @@ namespace ContactsManager.UI.Controllers
     //Sign in
     await _signInManager.SignInAsync(user, isPersistent: false);
 
-    return RedirectToAction(nameof(PersonsController.Index), "Persons");
+    return Json(new { success = true });
    }
    else
    {
@@ -85,8 +85,8 @@ namespace ContactsManager.UI.Controllers
      ModelState.AddModelError("Register", error.Description);
     }
 
-    return View(registerDTO);
-   }
+    var modelErrors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage);
+    return Json(new { success = false, errors = modelErrors });   }
   }
   
   [HttpGet]

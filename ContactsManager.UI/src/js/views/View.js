@@ -69,34 +69,34 @@ export default class View {
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
-
+  
+  resetModal() {
+    this._parentElement.reset();
+  }
+  
   renderError(message = this._errorMessage) {
-    const markup = `
-      <div class="error">
-        <div>
-          <svg>
-            <use href="${icons}#icon-alert-triangle"></use>
-          </svg>
-        </div>
-        <p>${message}</p>
-      </div>
-    `;
-    this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this.showMessageModal(message);
   }
 
   renderMessage(message = this._message) {
-    const markup = `
-      <div class="message">
-        <div>
-          <svg>
-            <use href="${icons}#icon-smile"></use>
-          </svg>
-        </div>
-        <p>${message}</p>
-      </div>
-    `;
-    this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this.showMessageModal(message);
+  }
+  
+  showMessageModal(message) {
+    const messageModal = document.querySelector('.message-modal');
+    const messageText = messageModal.querySelector('.message-modal__text');
+    const closeModalBtn = messageModal.querySelector('.message-modal__btn--close-modal');
+
+    messageText.textContent = message;
+
+    messageModal.classList.remove('hidden');
+
+    closeModalBtn.addEventListener('click', () => {
+      messageModal.classList.add('hidden');
+    });
+
+    setTimeout(() => {
+      messageModal.classList.add('hidden');
+    }, 3000);
   }
 }

@@ -122,8 +122,13 @@ const controlAddRecipe = async function (newRecipe) {
 
 const controlLogin = async function (loginDto) {
   try {
-    await LoginView._login(loginDto);
-    LoginView.renderMessage();
+    const result = await LoginView._login(loginDto);
+    if (result){
+      LoginView.renderMessage();
+      LoginView.toggleWindow();
+    }else {
+      LoginView.renderError();
+    }
   } catch (err) {
     console.error('💥', err);
     LoginView.renderError('Invalid email or password. Please try again.');
@@ -132,10 +137,16 @@ const controlLogin = async function (loginDto) {
 
 const controlRegister = async function (registerDto) {
   try {
-    await RegisterView._register(registerDto);
-    RegisterView.renderMessage();
+    const result = await RegisterView._register(registerDto);
+    if (result){
+      RegisterView.renderMessage();
+      RegisterView.toggleWindow();
+    }else {
+      RegisterView.renderError();
+    }
   } catch (err) {
     console.error('Registration failed', err);
+    RegisterView.renderError('Registration failed');
   }
 };
 

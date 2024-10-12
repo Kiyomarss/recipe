@@ -6,7 +6,7 @@ using ServiceContracts;
 namespace ContactsManager.UI.Controllers;
 
 [Route("[controller]")]
-[Authorize]
+[AllowAnonymous]
 public class RecipesController  : Controller
 {
     private readonly IRecipesGetterService _recipesGetterService;
@@ -19,7 +19,14 @@ public class RecipesController  : Controller
     }
     
     [Route("[action]")]
-    public async Task<IActionResult> Index(string title)
+    [Route("/")]
+    public Task<IActionResult> Index()
+    {
+        return Task.FromResult<IActionResult>(PhysicalFile(Path.Combine(Directory.GetCurrentDirectory(), "dist", "index.html"), "text/html"));
+    }
+    
+    [Route("[action]")]
+    public async Task<IActionResult> Search(string title)
     {
         //Search
         List<RecipeResponse> recipes = await _recipesGetterService.GetRecipeByRecipeName(title);

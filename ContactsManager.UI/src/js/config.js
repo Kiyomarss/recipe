@@ -1,9 +1,9 @@
 export const API_URL = 'https://forkify-api.herokuapp.com/api/v2/recipes/';
-export const Recipes_Index = 'http://localhost:5153/Recipes/Index';
+export const Recipes_Search = 'http://localhost:5153/Recipes/Search';
 export const Recipes_Load = 'http://localhost:5153/Recipes/Load';
 export const Recipes_Create = 'http://localhost:5153/Recipes/Create';
 export const Login = 'http://localhost:5153/Account/Login2';
-export const Register = 'http://localhost:5153/Account/Register2';
+export const Register = 'http://localhost:5153/Account/Register';
 export const TIMEOUT_SEC = 10;
 export const RES_PER_PAGE = 10;
 export const KEY = '4b46ca5a-45bc-4979-97f3-7be667599f4f';

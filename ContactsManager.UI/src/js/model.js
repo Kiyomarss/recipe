@@ -1,5 +1,5 @@
 import { async } from 'regenerator-runtime';
-import {API_URL, RES_PER_PAGE, KEY, Recipes_Index, Recipes_Load, Recipes_Create, Login} from './config.js';
+import {API_URL, RES_PER_PAGE, KEY, Recipes_Search, Recipes_Load, Recipes_Create, Login} from './config.js';
 // import { getJSON, sendJSON } from './helpers.js';
 import { AJAX } from './helpers.js';
 
@@ -52,7 +52,7 @@ export const loadSearchResults = async function (query) {
   try {
     state.search.query = query;
 
-    const data = await AJAX(`${Recipes_Index}?title=${query}`);
+    const data = await AJAX(`${Recipes_Search}?title=${query}`);
 
     state.search.results = data.map(rec => {
       return {

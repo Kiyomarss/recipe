@@ -44,7 +44,6 @@ namespace CRUDExample.Controllers
 
   //Url: persons/index
   [Route("[action]")]
-  [Route("/")]
   [ServiceFilter(typeof(PersonsListActionFilter), Order = 4)]
 
   [ResponseHeaderFilterFactory("MyKey-FromAction", "MyValue-From-Action", 1)]

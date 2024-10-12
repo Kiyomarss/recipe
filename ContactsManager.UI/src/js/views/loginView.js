@@ -21,10 +21,14 @@ class LoginView extends View {
   }
 
   toggleWindow() {
+    const isOpen = !this._window.classList.contains('hidden');
+
+    if (isOpen) {
+      this.resetModal();
+    }
+
     this._overlay.classList.toggle('hidden');
     this._window.classList.toggle('hidden');
-
-    this.resetModal();
   }
 
   _addHandlerRegisterOpen() {
@@ -54,42 +58,19 @@ class LoginView extends View {
   }
 
   async _login(loginDto) {
-    try {
-      const dto = {
-        email: loginDto.userName,
-        password: loginDto.password,
-      };
+    const dto = {
+      email: loginDto.userName,
+      password: loginDto.password,
+    };
 
-      const result = await AJAX(`${Login}`, dto);
+    const result = await AJAX(`${Login}`, dto);
 
-      if (result.success) {
-        this.toggleWindow();
-      }
-      else {
-        const errorContainer = document.querySelector("#error-messages");
-        errorContainer.innerHTML = result.errors.join("<br>");
-        errorContainer.style.display = "block";
-      }
-    } catch (err) {
-      const errorContainer = document.querySelector("#error-messages");
-      errorContainer.innerHTML = err.join("<br>");
-      errorContainer.style.display = "block";
+    if (!result.success) {
+      this._errorMessage = result.errors.join("<br>");
     }
+    
+    return result.success;
   }
-
-  resetModal() {
-    // ریست کردن فرم
-    this._parentElement.reset();
-
-    // پاک کردن پیام‌های خطا و موفقیت
-    const errorContainer = document.querySelector("#error-messages");
-    const successContainer = document.querySelector("#success-messages");
-
-    console.log(errorContainer.style.display);
-    errorContainer.style.display = 'none';
-    //successContainer.style.display = 'none';
-  }
-
 
   _generateMarkup() {}
 }

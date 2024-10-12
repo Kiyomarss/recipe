@@ -120,9 +120,9 @@ namespace CRUDExample
     });
    });
 
-   services.ConfigureApplicationCookie(options => {
-    options.LoginPath = "/Account/Login";
-   });
+   // services.ConfigureApplicationCookie(options => {
+   //  options.LoginPath = "/Account/Login";
+   // });
 
    services.AddHttpLogging(options =>
    {
