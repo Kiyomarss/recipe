@@ -3,6 +3,7 @@ export const Recipes_Search = 'http://localhost:5153/Recipes/Search';
 export const Recipes_Load = 'http://localhost:5153/Recipes/Load';
 export const Recipes_Create = 'http://localhost:5153/Recipes/Create';
 export const Login = 'http://localhost:5153/Account/Login2';
+export const Logout = 'http://localhost:5153/Account/Logout';
 export const Register = 'http://localhost:5153/Account/Register';
 export const TIMEOUT_SEC = 10;
 export const RES_PER_PAGE = 10;

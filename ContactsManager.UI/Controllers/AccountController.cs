@@ -157,8 +157,17 @@ namespace ContactsManager.UI.Controllers
   [Authorize]
   public async Task<IActionResult> Logout()
   {
-   await _signInManager.SignOutAsync();
-   return RedirectToAction(nameof(PersonsController.Index), "Persons");
+   try
+   {
+    await _signInManager.SignOutAsync();
+
+    return Ok(new { success = true });
+   }
+   catch (Exception ex)
+   {
+    // در صورت بروز خطا، کد وضعیت 500 (Internal Server Error) را بازگردانید
+    return StatusCode(StatusCodes.Status500InternalServerError, new { success = false, error = "An error occurred during logout", details = ex.Message });
+   }
   }
 
 
